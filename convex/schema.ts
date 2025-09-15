@@ -12,14 +12,14 @@ export default defineSchema({
   }).index("by_team_code", ["teamCode"]),
 
   nodes: defineTable({
-    id: v.number(),
+    nodeId: v.number(),
     clue: v.string(),
     question: v.string(),
     correctQrCode: v.string(),
     expectedAnswer: v.optional(v.string()),
     createdAt: v.number(),
     isActive: v.boolean(),
-  }).index("by_id", ["id"]).index("by_active", ["isActive"]),
+  }).index("by_node_id", ["nodeId"]).index("by_active", ["isActive"]),
 
   submissions: defineTable({
     teamId: v.id("teams"),
