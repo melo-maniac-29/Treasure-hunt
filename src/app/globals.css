@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-jungle-primary via-jungle-secondary to-jungle-primary;
+    @apply min-h-screen text-white;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .jungle-card {
+    @apply bg-jungle-secondary/80 backdrop-blur-sm border border-jungle-accent/30 rounded-xl shadow-xl;
+  }
+  
+  .jungle-button {
+    @apply bg-jungle-accent hover:bg-jungle-amber text-jungle-primary font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105 active:scale-95;
+  }
+  
+  .jungle-button-secondary {
+    @apply bg-jungle-brown hover:bg-jungle-brown-light text-white font-medium px-4 py-2 rounded-md transition-all duration-200;
+  }
+  
+  .jungle-input {
+    @apply bg-jungle-primary/50 border border-jungle-accent/50 text-white placeholder-jungle-stone-light rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-jungle-accent focus:border-transparent;
+  }
+  
+  .node-incomplete {
+    @apply opacity-50 grayscale filter blur-sm;
+  }
+  
+  .node-current {
+    @apply ring-4 ring-jungle-accent shadow-lg shadow-jungle-accent/50 animate-pulse-glow;
+  }
+  
+  .node-complete {
+    @apply bg-green-500 border-green-400 shadow-lg shadow-green-500/50;
+  }
+}

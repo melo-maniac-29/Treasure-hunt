@@ -1,0 +1,46 @@
+{
+  "name": "treasure-hunt",
+  "version": "1.0.0",
+  "description": "A real-time, interactive treasure hunt game system with jungle/explorer theming. Players work in teams to progress through a series of nodes by scanning QR codes at physical locations and answering questions. Administrators create nodes, manage the game flow, and manually approve submissions for fair gameplay.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melo-maniac-29/Treasure-hunt.git"
+  },
+  "keywords": ["treasure-hunt", "qr-codes", "real-time", "game"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/melo-maniac-29/Treasure-hunt/issues"
+  },
+  "homepage": "https://github.com/melo-maniac-29/Treasure-hunt#readme",
+  "dependencies": {
+    "@types/node": "^24.4.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.1.13",
+    "@types/uuid": "^10.0.0",
+    "autoprefixer": "^10.4.21",
+    "convex": "^1.27.0",
+    "eslint": "^9.35.0",
+    "eslint-config-next": "^15.5.3",
+    "framer-motion": "^12.23.12",
+    "html5-qrcode": "^2.3.8",
+    "lucide-react": "^0.544.0",
+    "next": "^15.5.3",
+    "postcss": "^8.5.6",
+    "qrcode": "^1.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-konva": "^19.0.10",
+    "tailwindcss": "^4.1.13",
+    "typescript": "^5.9.2",
+    "uuid": "^13.0.0"
+  }
+}
